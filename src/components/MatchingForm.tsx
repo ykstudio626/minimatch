@@ -277,7 +277,7 @@ export default function MatchingForm({ onResultsReceived }: MatchingFormProps) {
             </div>
             <div>
               <p className="font-semibold">勤務地および勤務形態</p>
-              <p>品川駅、リモート併用</p>
+              <p>新宿駅、リモート併用</p>
             </div>
           </div>
         </div>
