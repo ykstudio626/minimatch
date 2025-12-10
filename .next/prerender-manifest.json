@@ -1,6 +1,30 @@
 {
   "version": 4,
   "routes": {
+    "/": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/",
+      "dataRoute": "/index.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/_not-found": {
       "initialStatus": 404,
       "experimentalBypassFor": [
@@ -25,37 +49,13 @@
         "x-next-revalidated-tags",
         "x-next-revalidate-tag-token"
       ]
-    },
-    "/": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/",
-      "dataRoute": "/index.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
     }
   },
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "7247e3f69b6f5f47221b1dab0eefbc4c",
-    "previewModeSigningKey": "8e3f9abfc273f74e033bc74ab7565ad139e874dcc005caf843aa04edac51e6ba",
-    "previewModeEncryptionKey": "643c74eae7cdd65ea07ffd29511d23fece753521e5a9850ef9305f7138538940"
+    "previewModeId": "ed28fcbda792b6d9e01dfebe84e61331",
+    "previewModeSigningKey": "0031252e1614d0ab3d2a19d60b1a19aba47ede1e4a4550a6bb09746becca3cca",
+    "previewModeEncryptionKey": "438f6e8d73abcdcc300f70d6f3850c9e08c5ed9ba0c307246990c58abff1cfce"
   }
 }
