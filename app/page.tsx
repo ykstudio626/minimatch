@@ -28,7 +28,7 @@ export default function Home() {
     <div className="min-h-screen bg-gray-100">
       <header className="bg-blue-600 text-white shadow-lg">
         <div className="container mx-auto px-4 py-6">
-          <h1 className="text-4xl font-bold">miniMatch</h1>
+          <h1 className="text-4xl font-bold">miniMatch(nextjs)</h1>
         </div>
       </header>
 
